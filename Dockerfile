@@ -23,6 +23,7 @@ RUN apt-get update && apt-get install -y \
     libxext6 \
     libxi6 \
     chromium \
+    chromium-driver\
     && rm -rf /var/lib/apt/lists/*
 
 # Set environment for Chromium path (important for undetected_chromedriver)
