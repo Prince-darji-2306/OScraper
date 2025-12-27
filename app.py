@@ -45,7 +45,7 @@ def search_pdfs(query: str = Query(..., description="Search query"), max_results
     prefs = {"profile.managed_default_content_settings.images": 2}
     options.add_experimental_option("prefs", prefs)
 
-    driver = uc.Chrome(options=options, version_main=138, use_subprocess=True)
+    driver = uc.Chrome(options=options, use_subprocess=True)
 
     try:
         search_query = quote(query + " filetype:pdf")
